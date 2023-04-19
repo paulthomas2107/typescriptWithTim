@@ -1,4 +1,4 @@
-import { Species, Animal } from './types';
+import { Species, Animal, Farm } from './types';
 
 let x: number = 3;
 let y: string = 'oaaa';
@@ -38,15 +38,21 @@ var obj2: object = {
 const species1 = {
   id: 123,
   name: 'Dog',
-};
+} as Species;
 
-const animal1 = {
+const animal1: Animal = {
   id: 456,
   name: 'Lassie',
   type: species1,
   age: 12,
   siblings: ['Masie', 'Doggo'],
   optional_sex: true,
+} as Animal;
+
+const printAnimal = (animal: Animal) => {
+  console.log(animal);
 };
 
-console.log(animal1);
+printAnimal(animal1);
+
+
