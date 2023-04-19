@@ -1,4 +1,4 @@
-import { Species, Animal, Farm } from './types';
+import { Species, Animal, Farm, Monkey } from './types';
 
 let x: number = 3;
 let y: string = 'oaaa';
@@ -55,4 +55,19 @@ const printAnimal = (animal: Animal) => {
 
 printAnimal(animal1);
 
+const monkey1: Monkey = {
+  diet: 'Nuts',
+  id: 456,
+  name: 'Lassie',
+  type: species1,
+  age: 12,
+  siblings: ['Masie', 'Doggo'],
+  optional_sex: true,
+};
+
+printAnimal(monkey1);
+
+const set1 = new Set<Animal>();
+set1.add(animal1)
+set1.add(monkey1)
 
