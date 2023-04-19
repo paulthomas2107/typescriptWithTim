@@ -96,3 +96,19 @@ const getShirtPrice = (shirtSize: ShirtSize) => {
       return 30;
   }
 };
+
+const price3 = getShirtPrice(ShirtSize.Medium);
+console.log(price3);
+
+const isFish = (animal: Fish | Dog): animal is Fish => {
+  return (animal as Fish).swim !== undefined;
+};
+
+const calAnimalFunc = (animal: Fish | Dog) => {
+  if (isFish(animal)) animal.swim();
+  else animal.bark();
+};
+
+let x3: number = 2;
+// @ts-ignore
+x3 = 'Hello';
