@@ -1,3 +1,5 @@
+import { Species, Animal } from './types';
+
 let x: number = 3;
 let y: string = 'oaaa';
 let possible: boolean = true;
@@ -32,3 +34,19 @@ var obj2: object = {
   paul: 122,
   Thomas: 7278,
 };
+
+const species1 = {
+  id: 123,
+  name: 'Dog',
+};
+
+const animal1 = {
+  id: 456,
+  name: 'Lassie',
+  type: species1,
+  age: 12,
+  siblings: ['Masie', 'Doggo'],
+  optional_sex: true,
+};
+
+console.log(animal1);
