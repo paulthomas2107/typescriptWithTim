@@ -1,4 +1,4 @@
-import { Species, Animal, Farm, Monkey } from './types';
+import { Species, Animal, Farm, Monkey, Dog, Fish } from './types';
 
 let x: number = 3;
 let y: string = 'oaaa';
@@ -68,6 +68,31 @@ const monkey1: Monkey = {
 printAnimal(monkey1);
 
 const set1 = new Set<Animal>();
-set1.add(animal1)
-set1.add(monkey1)
+set1.add(animal1);
+set1.add(monkey1);
 
+interface AnimalInt {
+  name: string;
+}
+
+const p2 = (animal: AnimalInt) => {
+  console.log(animal.name);
+};
+
+enum ShirtSize {
+  Small = 'Small',
+  Medium = 'Medium',
+  Large = 'Large',
+}
+
+// Enums
+const getShirtPrice = (shirtSize: ShirtSize) => {
+  switch (shirtSize) {
+    case ShirtSize.Small:
+      return 10;
+    case ShirtSize.Medium:
+      return 20;
+    case ShirtSize.Large:
+      return 30;
+  }
+};

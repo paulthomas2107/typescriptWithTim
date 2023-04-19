@@ -22,3 +22,13 @@ export type Farm = {
 export type Monkey = {
   diet: string;
 } & Animal;
+
+export type Fish = {
+  name: string;
+  swim: () => void;
+};
+
+export type Dog = {
+  name: string;
+  bark: () => void;
+};
